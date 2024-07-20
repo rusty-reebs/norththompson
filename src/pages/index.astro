@@ -11,6 +11,9 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Image from '~/components/common/Image.astro';
+
+const northThompsonImg = '~/assets/images/norththompson.jpg';
 
 const metadata = {
   title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
@@ -21,30 +24,48 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
+  <!-- <Hero
+    actions={[
+      // {
+      //   variant: 'primary',
+      //   text: 'Get template',
+      //   href: 'https://github.com/onwidget/astrowind',
+      //   target: '_blank',
+      //   icon: 'tabler:download',
+      // },
+      { text: 'Book now', href: '#features' },
+    ]}
+    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+  > -->
+  <Fragment>
+    <div class="flex w-full place-content-center mt-16">
+      <Image src={northThompsonImg} alt="North Thompson Jetboat Tours" width={800} />
+    </div>
+  </Fragment>
   <Hero
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'Book now',
+        href: '#features',
+        icon: 'tabler:arrow-down',
       },
-      { text: 'Learn more', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
   >
-    <Fragment slot="title">
+    <!-- <Fragment slot="title">
       Free template for <span class="hidden xl:inline">creating websites with</span>
       <span class="text-accent dark:text-white highlight"> Astro 4.0</span> + Tailwind CSS
-    </Fragment>
+    </Fragment> -->
+
+    <Fragment slot="title"> Adventure Awaits: Jetboat River Tours in Beautiful British Columbia </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
-        + Tailwind CSS.</span
+        <span class="font-semibold">North Thompson Jetboat Tours</span> specializes in 2-hour tours in the BC interior.</span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
+      <span class="block mb-1 sm:hidden font-bold text-blue-600"
+        >North Thompson Jetboat Tours specializes in 2-hour tours in the BC interior.</span
+      >
       Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
       Blogs.
     </Fragment>
@@ -52,7 +73,7 @@ const metadata = {
 
   <!-- Note Widget ******************* -->
 
-  <Note />
+  <!-- <Note /> -->
 
   <!-- Features Widget *************** -->
 
