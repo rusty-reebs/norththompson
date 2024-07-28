@@ -116,15 +116,15 @@ export const headerData = {
     },
     {
       text: 'Pricing',
-      href: getPermalink('/pricing'),
+      href: getPermalink('/'),
     },
     {
       text: 'Calendar',
-      href: getPermalink('/pricing'),
+      href: getPermalink('/'),
     },
     {
       text: 'Contact',
-      href: getPermalink('/pricing'),
+      href: getPermalink('/'),
     },
     // {
     //   text: 'Widgets',
