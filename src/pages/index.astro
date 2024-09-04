@@ -19,7 +19,7 @@ const northThompsonImg = '~/assets/images/norththompson.jpg';
 const riverImg = '~/assets/images/river.jpg';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'North Thompson Jetboat Tours',
   ignoreTitleTemplate: true,
 };
 ---
@@ -126,9 +126,13 @@ const metadata = {
       {
         variant: 'primary',
         text: 'Contact Us',
-        href: getPermalink('/pricing'),
+        // href: getPermalink('/pricing'),
       },
-      { variant: 'primary', text: 'Book now', href: getPermalink('/pricing') },
+      {
+        variant: 'primary',
+        text: 'Book now',
+        // href: getPermalink('/pricing')
+      },
     ]}
   >
     <Fragment slot="title"> Questions? We're here to help! </Fragment>
