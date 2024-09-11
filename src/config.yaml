@@ -4,13 +4,13 @@ site:
   base: '/'
   trailingSlash: false
 
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  googleSiteVerificationId: false
 
 # Default SEO metadata
 metadata:
   title:
     default: North Thompson Jetboat Tours
-    template: '%s — AstroWind'
+    template: '%s — North Thompson Jetboat Tours'
   description: 'Jetboat tours on the North Thompson River in British Columbia, Canada. Experience the beauty of the river and the wildlife that call it home.'
   robots:
     index: true

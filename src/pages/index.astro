@@ -51,8 +51,8 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Book now',
-        href: '#features',
+        text: 'Book Now',
+        href: getPermalink('/contact'),
         icon: 'tabler:arrow-right',
       },
     ]}
@@ -126,13 +126,13 @@ const metadata = {
       {
         variant: 'primary',
         text: 'Contact Us',
-        // href: getPermalink('/pricing'),
+        href: getPermalink('/contact'),
       },
-      {
-        variant: 'primary',
-        text: 'Book now',
-        // href: getPermalink('/pricing')
-      },
+      // {
+      //   variant: 'primary',
+      //   text: 'Book now',
+      //   // href: getPermalink('/pricing')
+      // },
     ]}
   >
     <Fragment slot="title"> Questions? We're here to help! </Fragment>
