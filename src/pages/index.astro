@@ -17,6 +17,8 @@ import { getPermalink } from '~/utils/permalinks';
 
 const northThompsonImg = '~/assets/images/norththompson.jpg';
 const riverImg = '~/assets/images/river.jpg';
+const videoId = 'cgHWby4BLvg?si=TQVyGY777M3kTPTc';
+const video_2_Id = '7ztvkqiX3UQ?si=_qUaKqpmqVAwipHG&utm_source=ZTQxO';
 
 const metadata = {
   title: 'North Thompson Jetboat Tours',
@@ -76,7 +78,7 @@ const metadata = {
     </div>
   </Fragment> -->
   <Fragment>
-    <div class="flex items-center justify-center w-full pt-10 pb-20">
+    <!-- <div class="flex items-center justify-center w-full pt-10 pb-20">
       <iframe
         width="889"
         height="500"
@@ -86,6 +88,30 @@ const metadata = {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen></iframe>
+    </div> -->
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-20 pb-8 sm:pb-14">
+      <div class="video-container">
+        <iframe
+          width="315"
+          height="560"
+          src={`https://www.youtube.com/embed/${videoId}`}
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
+      <div class="video-container">
+        <iframe
+          width="315"
+          height="560"
+          src={`https://www.youtube.com/embed/${video_2_Id}`}
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
     </div>
   </Fragment>
 
@@ -93,15 +119,29 @@ const metadata = {
     isAfterContent
     items={[
       {
-        description: 'We launch from Ferry Road in Blackpool (just 10 minutes from Clearwater).',
+        description: 'Our tours launch at Ferry Road just outside of Clearwater, BC.',
       },
+      // {
+      //   description: 'We launch from Ferry Road in Blackpool (just 10 minutes from Clearwater).',
+      // },
       {
         description:
-          'The adventure starts off going downstream to Little Fort and then blast back up all the back channels right up to the Clearwater River bridge in town. From there we head back down the Clearwater River to the confluence then head back up the North Thompson River to the Raft River.',
+          'The exiliarating, breathtaking, 2-hour tour takes you through the scenic North Thompson valley. You can choose your own adventure or just let the guide know what your comfort level is. Our expert guides can safely make your trip memorable.',
       },
+      // {
+      //   description:
+      //     'The adventure starts off going downstream to Little Fort and then blast back up all the back channels right up to the Clearwater River bridge in town. From there we head back down the Clearwater River to the confluence then head back up the North Thompson River to the Raft River.',
+      // },
       {
         description:
-          'Enjoy beautiful views of the Trophy Mountains and Raft Peak. You will get a totally different perspective from the river than you would from the highway. We often see eagles, beavers, deer and bears.',
+          'Take a cruise down to Little Fort to have lunch or dinner at the High 5 restaurant. Or pack a picnic lunch, have a swim, and soak up the sun. Tours are extremely flexible and satisfaction guaranteed!',
+      },
+      // {
+      //   description:
+      //     'Enjoy beautiful views of the Trophy Mountains and Raft Peak. You will get a totally different perspective from the river than you would from the highway. We often see eagles, beavers, deer and bears.',
+      // },
+      {
+        description: 'Email for more info and to book your adventure today: fixall.rf@gmail.com',
       },
     ]}
     image={{
@@ -110,8 +150,9 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">What to Expect</h3>About your
-      2-hour tour in the North Thompson valley:
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Hold on tight!<br />And have your camera ready!
+      </h3>
     </Fragment>
 
     <Fragment slot="bg">
